@@ -18,11 +18,11 @@
 #define VELOCITY 5
 
 void driveSetup();
-void runCMD(String c);
+void runG(String c);
 void runST(int s);
 void runTH(int t);
-void calm(int d);
-void reverse(int d);
-void forward(int d);
+void calm();
+void reverse();
+void forward();
 #endif
 

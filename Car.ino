@@ -1,18 +1,18 @@
+ #include "Wifi.h"
 #include "Drive.h"
-#include "RC.h"
 
 void setup()
 {
-
-	Serial.begin(19200); 
-	Serial.println("Setup begin...");
+  Serial.begin(115200);
+  //GPS SETUP
+    gpsSetup();
+  //WIFI SETUP
+  wifiSetup();
   //DRIVE SETUP
   driveSetup();
-  Serial.println("Setup end...");
-
 }
 
 void loop() 
 {
-  RC();
+  WIFI();
 }
